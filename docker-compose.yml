@@ -1,0 +1,21 @@
+services:
+  api:
+   image: olat-nji/hng-task2-api
+
+    restart: always
+    networks:
+      - hng-task2
+
+  frontend:
+    image: olat-nji/hng-task2-frontend
+    ports:
+      - "3000:3000"
+    depends_on:
+      - api
+    restart: always
+    networks:
+      - hng-task2
+
+
+networks:
+  hng-task2:
