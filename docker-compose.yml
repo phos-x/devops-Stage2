@@ -1,12 +1,12 @@
 services:
   api:
-   image: tunecraftdavid4/hng-task-2-api
+   image: tunecraftdavid4/hng-task-2-api:latest
    restart: always
    networks:
       - tunecraftdavid4
 
   frontend:
-    image: tunecraftdavid4/hng-task-2-frontend
+    image: tunecraftdavid4/hng-task-2-frontend:latest
     ports:
       - "3000:3000"
     depends_on:
