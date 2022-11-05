@@ -1,13 +1,12 @@
 services:
   api:
-   image: olat-nji/hng-task2-api
-
-    restart: always
-    networks:
+   image: tunecraftdavid4/hng-task-2-api
+   restart: always
+   networks:
       - hng-task2
 
   frontend:
-    image: olat-nji/hng-task2-frontend
+    image: tunecraftdavid4/hng-task-2-frontend
     ports:
       - "3000:3000"
     depends_on:
