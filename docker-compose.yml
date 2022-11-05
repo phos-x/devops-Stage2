@@ -3,7 +3,7 @@ services:
    image: tunecraftdavid4/hng-task-2-api
    restart: always
    networks:
-      - hng-task2
+      - tunecraftdavid4
 
   frontend:
     image: tunecraftdavid4/hng-task-2-frontend
@@ -13,8 +13,8 @@ services:
       - api
     restart: always
     networks:
-      - hng-task2
+      - tunecraftdavid4
 
 
 networks:
-  hng-task2:
+  tunecraftdavid4:
