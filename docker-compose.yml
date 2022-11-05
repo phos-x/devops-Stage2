@@ -1,7 +1,6 @@
 services:
   api:
-   image: tunecraftdavid4/hng-task-2-api
-   restart: always
+   image: tunecraftdavid4/hng-task-2-api:latest
    networks:
       - tunecraftdavid4
 
