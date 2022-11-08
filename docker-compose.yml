@@ -1,19 +1,20 @@
 services:
   api:
-   image: tunecraftdavid4/hng-task-2-api:latest
+   image: dimejii/back:latest
    networks:
-      - tunecraftdavid4
+      - dimejiinet
 
   frontend:
-    image: tunecraftdavid4/hng-task-2-frontend:latest
+    image: dimejii/front:latest
     ports:
-      - "3000:3000"
+      - "3000:80"
     depends_on:
       - api
     restart: always
     networks:
-      - tunecraftdavid4
+      - dimejiinet
 
 
 networks:
-  tunecraftdavid4:
+  dimejiinet:
+
